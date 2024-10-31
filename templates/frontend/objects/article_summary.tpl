@@ -17,7 +17,7 @@
  *}
 {assign var=publication value=$article->getCurrentPublication()}
 {assign var=articlePath value=$article->getBestId($currentJournal)}
-{if (!$section.hideAuthor && $article->getHideAuthor() == \APP\submission\Submission::AUTHOR_TOC_DEFAULT) || $article->getHideAuthor() == \APP\submission\Submission::AUTHOR_TOC_SHOW}
+{if (!$section.showAuthor && $article->getshowAuthor() == \APP\submission\Submission::AUTHOR_TOC_DEFAULT) || $article->getHideAuthor() == \APP\submission\Submission::AUTHOR_TOC_SHOW}
 	{assign var="showAuthor" value=true}
 {/if}
 
